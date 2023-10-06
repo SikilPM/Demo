@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-15 11:47:33.512490",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details_tab",
+  "name1",
+  "email",
+  "address",
+  "workshop",
+  "adress_tab",
+  "name2",
+  "pos",
+  "pin",
+  "dic",
+  "cou",
+  "img",
+  "img2",
+  "task_tab",
+  "r1",
+  "check",
+  "column_break_s6rjx",
+  "r2",
+  "bill",
+  "section_break_aitbw",
+  "color"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address",
+   "options": "watch\nmango\ncat\nball\napple\npraful"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "email",
+   "unique": 1
+  },
+  {
+   "fieldname": "workshop",
+   "fieldtype": "Table",
+   "label": "Workshop",
+   "options": "Workshop"
+  },
+  {
+   "fieldname": "name2",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "pos",
+   "fieldtype": "Data",
+   "label": "PostOffice"
+  },
+  {
+   "fieldname": "pin",
+   "fieldtype": "Data",
+   "label": "Pin"
+  },
+  {
+   "fieldname": "dic",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "cou",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "bold": 1,
+   "fieldname": "adress_tab",
+   "fieldtype": "Tab Break",
+   "label": "ADDRESS"
+  },
+  {
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "DETAILS"
+  },
+  {
+   "fieldname": "img",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "img2",
+   "fieldtype": "Attach Image",
+   "label": "Image2"
+  },
+  {
+   "fieldname": "task_tab",
+   "fieldtype": "Tab Break",
+   "label": "Task"
+  },
+  {
+   "fieldname": "r1",
+   "fieldtype": "Data",
+   "label": "Rupee"
+  },
+  {
+   "default": "0",
+   "fieldname": "check",
+   "fieldtype": "Check"
+  },
+  {
+   "fieldname": "column_break_s6rjx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "r2",
+   "fieldtype": "Data",
+   "label": "Rupee"
+  },
+  {
+   "fieldname": "bill",
+   "fieldtype": "Data",
+   "label": "Bill"
+  },
+  {
+   "fieldname": "section_break_aitbw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "HTML",
+   "label": "color",
+   "options": "Mechanic"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-20 17:47:13.636634",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Mechanic",
+ "nsm_parent_field": "parent_mechanic",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

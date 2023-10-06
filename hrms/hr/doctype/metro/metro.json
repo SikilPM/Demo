@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-03 16:29:37.338528",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "dlt",
+  "count",
+  "section_break_dfpiw",
+  "details",
+  "date",
+  "nam_1",
+  "ag_1",
+  "gen_1"
+ ],
+ "fields": [
+  {
+   "fieldname": "dlt",
+   "fieldtype": "Data",
+   "label": "DELETE",
+   "options": "SubMetro"
+  },
+  {
+   "fieldname": "count",
+   "fieldtype": "Data",
+   "label": "COUNT"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_dfpiw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "details",
+   "fieldtype": "Heading",
+   "label": "Details"
+  },
+  {
+   "fieldname": "nam_1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "ag_1",
+   "fieldtype": "Data",
+   "label": "Age"
+  },
+  {
+   "fieldname": "gen_1",
+   "fieldtype": "Data",
+   "label": "Gender"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-05 15:37:35.528420",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Metro",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

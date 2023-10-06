@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-27 11:56:48.792135",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employees",
+  "doc",
+  "section_break_u74m2",
+  "eng"
+ ],
+ "fields": [
+  {
+   "fieldname": "employees",
+   "fieldtype": "Heading",
+   "label": "Employees"
+  },
+  {
+   "fieldname": "section_break_u74m2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "eng",
+   "fieldtype": "Table",
+   "label": "Engineer",
+   "options": "EngineerList"
+  },
+  {
+   "fieldname": "doc",
+   "fieldtype": "Table",
+   "label": "Doctor",
+   "options": "DoctorTable"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-28 12:02:40.696136",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "EmployeeHouse",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

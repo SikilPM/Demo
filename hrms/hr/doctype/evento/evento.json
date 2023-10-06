@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-26 10:52:02.938834",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employeedetails",
+  "id",
+  "join",
+  "name1",
+  "address",
+  "age",
+  "designation",
+  "event",
+  "d"
+ ],
+ "fields": [
+  {
+   "fieldname": "employeedetails",
+   "fieldtype": "Heading",
+   "label": "EmployeeDetails"
+  },
+  {
+   "fetch_from": "id.first_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fetch_from": "id.custom_address",
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fetch_from": "id.custom_age",
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "label": "Age"
+  },
+  {
+   "fetch_from": "id.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "event",
+   "fieldtype": "Link",
+   "label": "Event",
+   "options": "EventList"
+  },
+  {
+   "fieldname": "id",
+   "fieldtype": "Link",
+   "label": "EmpId",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "join",
+   "fieldtype": "Date",
+   "label": "Date Of Joining"
+  },
+  {
+   "fieldname": "d",
+   "fieldtype": "Text"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-26 14:52:44.709936",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "EventO",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

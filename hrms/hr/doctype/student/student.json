@@ -1,0 +1,313 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2023-09-13 14:52:10.042254",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details_tab",
+  "name1",
+  "designation",
+  "dob",
+  "age",
+  "column_break_rkzrl",
+  "gender",
+  "email",
+  "phone",
+  "section_break_t7v9b",
+  "adds",
+  "housename",
+  "po",
+  "pin",
+  "column_break_olmfo",
+  "district",
+  "education_details_tab",
+  "qualification",
+  "course",
+  "year",
+  "class",
+  "unbo",
+  "column_break_obl8e",
+  "passout",
+  "percentage",
+  "section_break_slxcs",
+  "education_details",
+  "more_details_tab",
+  "fname",
+  "foccu",
+  "column_break_pbjro",
+  "mname",
+  "moccu",
+  "address",
+  "section_break_pre57",
+  "health",
+  "gst_tab",
+  "country",
+  "reg",
+  "legal",
+  "trade",
+  "validity"
+ ],
+ "fields": [
+  {
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "DETAILS"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Name",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "name1.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fetch_from": "name1.date_of_birth",
+   "fieldname": "dob",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DOB",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "name1.custom_age",
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "label": "Age"
+  },
+  {
+   "fieldname": "column_break_rkzrl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fetch_from": "name1.custom_phone_number",
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Phone Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_t7v9b",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "adds",
+   "fieldtype": "Heading",
+   "label": "Address"
+  },
+  {
+   "fetch_from": "name1.current_address",
+   "fieldname": "housename",
+   "fieldtype": "Data",
+   "label": "House Name"
+  },
+  {
+   "fieldname": "po",
+   "fieldtype": "Data",
+   "label": "Post Office"
+  },
+  {
+   "fieldname": "pin",
+   "fieldtype": "Data",
+   "label": "Pin",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_olmfo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Select",
+   "label": "Country",
+   "options": "China\nIndia\nAmerica\nUAE\nUK\nAustralia\nJapan\nPakistan\nIran"
+  },
+  {
+   "fieldname": "education_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "EDUCATION DETAILS"
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Select",
+   "label": "Qualification",
+   "options": "UG\nPG\nSchool"
+  },
+  {
+   "fieldname": "unbo",
+   "fieldtype": "Data",
+   "label": "University/Board"
+  },
+  {
+   "fieldname": "column_break_obl8e",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "passout",
+   "fieldtype": "Data",
+   "label": "Year of Pass Out"
+  },
+  {
+   "fieldname": "percentage",
+   "fieldtype": "Data",
+   "label": "Percentage"
+  },
+  {
+   "fieldname": "section_break_slxcs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "education_details",
+   "fieldtype": "Table",
+   "label": "Education Details",
+   "options": "Education Details"
+  },
+  {
+   "fieldname": "more_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "MORE DETAILS"
+  },
+  {
+   "fieldname": "fname",
+   "fieldtype": "Data",
+   "label": "Fathers Name"
+  },
+  {
+   "fieldname": "foccu",
+   "fieldtype": "Data",
+   "label": "Father Occupation"
+  },
+  {
+   "fieldname": "column_break_pbjro",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mname",
+   "fieldtype": "Data",
+   "label": "Mothers Name"
+  },
+  {
+   "fieldname": "moccu",
+   "fieldtype": "Data",
+   "label": "Mothers Occupation"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address1"
+  },
+  {
+   "fieldname": "section_break_pre57",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "health",
+   "fieldtype": "Table",
+   "label": "HEALTH DETAILS",
+   "options": "HEALTH DETAILS"
+  },
+  {
+   "depends_on": "eval:doc.country==\"India\"",
+   "fieldname": "reg",
+   "fieldtype": "Data",
+   "label": "Registration Number"
+  },
+  {
+   "depends_on": "eval:doc.country==\"India\"",
+   "fieldname": "legal",
+   "fieldtype": "Data",
+   "label": "Legal Name"
+  },
+  {
+   "depends_on": "eval:doc.country==\"India\"",
+   "fieldname": "trade",
+   "fieldtype": "Data",
+   "label": "Trade Name"
+  },
+  {
+   "depends_on": "eval:doc.country==\"India\"",
+   "fieldname": "validity",
+   "fieldtype": "Data",
+   "label": "Date of Validity",
+   "mandatory_depends_on": "eval:doc.country==\"India\""
+  },
+  {
+   "fieldname": "gst_tab",
+   "fieldtype": "Tab Break",
+   "label": "GST"
+  },
+  {
+   "depends_on": "eval:doc.qualification==\"UG\"",
+   "fieldname": "course",
+   "fieldtype": "Select",
+   "label": "Course",
+   "options": "BCOM\nBCA\nBA\nBBA"
+  },
+  {
+   "depends_on": "eval:doc.course==\"BCOM\"  ",
+   "fieldname": "year",
+   "fieldtype": "Select",
+   "label": "Year",
+   "options": "First Year\nSecond Year\nThird Year"
+  },
+  {
+   "fieldname": "class",
+   "fieldtype": "Select",
+   "label": "Class",
+   "options": "8th\n9th\n10th"
+  },
+  {
+   "fetch_from": "name1.personal_email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-15 16:33:08.905355",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "student",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-02 16:41:09.795947",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "series",
+  "first",
+  "last",
+  "gender",
+  "department",
+  "sublink",
+  "num1",
+  "num2",
+  "section_break_1wyia",
+  "mainchild"
+ ],
+ "fields": [
+  {
+   "fieldname": "series",
+   "fieldtype": "Data",
+   "label": "NamingSeries"
+  },
+  {
+   "fieldname": "first",
+   "fieldtype": "Data",
+   "label": "FirstName",
+   "unique": 1
+  },
+  {
+   "fieldname": "last",
+   "fieldtype": "Data",
+   "label": "LastName"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Select Gender\nMale\nFemale"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "sublink",
+   "fieldtype": "Link",
+   "label": "Link",
+   "options": "SubServer"
+  },
+  {
+   "fieldname": "num1",
+   "fieldtype": "Int",
+   "label": "Number1"
+  },
+  {
+   "fieldname": "num2",
+   "fieldtype": "Int",
+   "label": "Number2"
+  },
+  {
+   "fieldname": "section_break_1wyia",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "mainchild",
+   "fieldtype": "Table",
+   "options": "MainServer_Child"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-05 16:52:58.226331",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "MainServer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

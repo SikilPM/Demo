@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-14 09:31:14.147625",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tschool",
+  "tattach",
+  "pschool",
+  "pattach",
+  "degree",
+  "dattach"
+ ],
+ "fields": [
+  {
+   "fieldname": "tschool",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "School"
+  },
+  {
+   "fieldname": "tattach",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Tenth Marklist"
+  },
+  {
+   "fieldname": "pschool",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "School"
+  },
+  {
+   "fieldname": "pattach",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "PlusTwo Marklist"
+  },
+  {
+   "fieldname": "degree",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Degree"
+  },
+  {
+   "fieldname": "dattach",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Degree Marklist"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-09-14 09:49:17.145803",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Education Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

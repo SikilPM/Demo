@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-21 10:12:49.899488",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details",
+  "name1",
+  "add",
+  "dob",
+  "age",
+  "column_break_d3nts",
+  "check",
+  "job_details",
+  "name2",
+  "id",
+  "comp",
+  "des",
+  "exp"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "is_virtual": 1,
+   "label": "Name"
+  },
+  {
+   "fieldname": "add",
+   "fieldtype": "Data",
+   "is_virtual": 1,
+   "label": "Address"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "is_virtual": 1,
+   "label": "DOB"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "is_virtual": 1,
+   "label": "Age"
+  },
+  {
+   "bold": 1,
+   "fieldname": "details",
+   "fieldtype": "Tab Break",
+   "label": "Personal Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "check",
+   "fieldtype": "Check",
+   "label": "Employee details"
+  },
+  {
+   "fieldname": "column_break_d3nts",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "job_details",
+   "fieldtype": "Heading",
+   "label": "Job Details"
+  },
+  {
+   "fieldname": "name2",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "label": "Employee ID"
+  },
+  {
+   "fieldname": "comp",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "des",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "exp",
+   "fieldtype": "Data",
+   "label": "Year Of Experience"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-22 16:46:45.801289",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "DialogTask",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

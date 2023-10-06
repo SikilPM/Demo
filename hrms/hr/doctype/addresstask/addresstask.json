@@ -1,0 +1,223 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-19 11:47:39.625749",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "address_tab",
+  "current",
+  "chname",
+  "chnumber",
+  "clmark",
+  "cpo",
+  "cpin",
+  "cplace",
+  "cdis",
+  "cemail",
+  "cphone",
+  "acheck",
+  "column_break_qf8yz",
+  "permanent",
+  "phname",
+  "phnumber",
+  "plmark",
+  "ppo",
+  "ppin",
+  "pplace",
+  "pdistrict",
+  "pemail",
+  "pphone",
+  "task_tab",
+  "n1",
+  "n2",
+  "column_break_uhspc",
+  "date",
+  "time",
+  "section_break_vuq1a",
+  "sum"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "current",
+   "fieldtype": "Heading",
+   "label": "Current Address"
+  },
+  {
+   "fieldname": "chname",
+   "fieldtype": "Data",
+   "label": "House Name"
+  },
+  {
+   "fieldname": "chnumber",
+   "fieldtype": "Data",
+   "label": "House Number"
+  },
+  {
+   "fieldname": "clmark",
+   "fieldtype": "Data",
+   "label": "Land Mark"
+  },
+  {
+   "fieldname": "cpo",
+   "fieldtype": "Data",
+   "label": "Post Office"
+  },
+  {
+   "fieldname": "cpin",
+   "fieldtype": "Data",
+   "label": "Pin"
+  },
+  {
+   "fieldname": "cplace",
+   "fieldtype": "Data",
+   "label": "Place"
+  },
+  {
+   "fieldname": "cdis",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "cemail",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "cphone",
+   "fieldtype": "Data",
+   "label": "PnoneNumber"
+  },
+  {
+   "fieldname": "column_break_qf8yz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phname",
+   "fieldtype": "Data",
+   "label": "House Name"
+  },
+  {
+   "fieldname": "phnumber",
+   "fieldtype": "Data",
+   "label": "House Number"
+  },
+  {
+   "fieldname": "plmark",
+   "fieldtype": "Data",
+   "label": "Land Mark"
+  },
+  {
+   "fieldname": "ppo",
+   "fieldtype": "Data",
+   "label": "PostOffice"
+  },
+  {
+   "fieldname": "ppin",
+   "fieldtype": "Data",
+   "label": "Pin"
+  },
+  {
+   "fieldname": "pplace",
+   "fieldtype": "Data",
+   "label": "Place"
+  },
+  {
+   "fieldname": "pdistrict",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "pemail",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "pphone",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "bold": 1,
+   "fieldname": "permanent",
+   "fieldtype": "Heading",
+   "label": "Permanent Address"
+  },
+  {
+   "default": "0",
+   "fieldname": "acheck",
+   "fieldtype": "Check",
+   "label": "Is You'r Present Address is same ?"
+  },
+  {
+   "fieldname": "address_tab",
+   "fieldtype": "Tab Break",
+   "label": "ADDRESS"
+  },
+  {
+   "fieldname": "task_tab",
+   "fieldtype": "Tab Break",
+   "label": "TASK"
+  },
+  {
+   "fieldname": "n1",
+   "fieldtype": "Int",
+   "label": "Number 1"
+  },
+  {
+   "fieldname": "n2",
+   "fieldtype": "Int",
+   "label": "Number 2"
+  },
+  {
+   "fieldname": "section_break_vuq1a",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sum",
+   "fieldtype": "Data",
+   "label": "Sum"
+  },
+  {
+   "fieldname": "column_break_uhspc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Data",
+   "label": "Time_new"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-19 17:49:11.064802",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "AddressTask",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
